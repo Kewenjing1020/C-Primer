@@ -1,3 +1,7 @@
+//writen by Ke Wenjing,19/11/2015
+//C++ Primer, chap3
+//including using, string, vector, iterator, bitset
+
 #include <iostream>
 #include <string>
 #include <vector> 
