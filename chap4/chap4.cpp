@@ -4,6 +4,7 @@
 
 #include <iostream>
 #include <string>
+#include <vector>
 using std::string;
 using std::cin;
 using std::cout;
@@ -103,16 +104,143 @@ int main(){
 	// cout << *sp;
 
 //reference and pointer
-	int val1=1024,val2=2048;
-	int *pi=&val1,*pi2=&val2;
-	pi=pi2;
-	cout <<val1<<val2<<endl;
-	cout << *pi <<*pi2<<endl;
+	// int val1=1024,val2=2048;
+	// int *pi=&val1,*pi2=&val2;
+	// pi=pi2;
+	// cout <<val1<<val2<<endl;
+	// cout << *pi <<*pi2<<endl;
 
-	int &ri =val1, &ri2=val2;
-	ri=ri2;
-	cout << val1<<val2;
+	// int &ri =val1, &ri2=val2;
+	// ri=ri2;
+	// cout << val1<<val2;
 
+
+	// int ia[]={0,2,4,6,8};
+	// int *ip=ia;				//=> int *ip =&ia[0]
+	// cout<< *ip<<endl;
+
+	// ip=&ia[4];
+	// cout<<*ip<<endl;	
+
+	// ip=ia;
+	// cout<<ip<<endl;				//0x7fff5226bb60
+	
+	// int *ip2=ip+4;				//=> int *ip2= &(ia+4)
+	// cout<<*ip2<<endl;
+	// cout<<ip2<<endl;
+
+	// int last=*(ia+4);
+	// cout <<last<<endl;
+
+	// int *p=&ia[2];
+	// int j=p[1];					//-> ia[3]
+	// int k=p[-2];				//->ia[0]
+	// cout << j << k <<endl;
+
+
+	// const size_t arr_sz=5;
+	// int int_arr[arr_sz]={0,1,2,3,4};
+	// for (int *pbegin=int_arr,*pend = int_arr+arr_sz; pbegin!=pend; ++pbegin)
+	// 	cout << *pbegin<<' ';
+
+
+	// const double *cptr;
+	// const double pi=3.14;
+	// const double h=6.31;
+	// const double *cptr2 = &h;
+	// cptr = &pi;
+	// cout << *cptr<<endl;
+	// cptr = cptr2;
+	// cout << pi <<endl;
+	// cout << *cptr <<endl;
+
+ 	
+ 	// int errNum=0;
+ 	// int *const curErr = & errNum;		//curErr is read-only
+
+ 	// cout << *curErr <<endl;
+
+ 	// *curErr =2;
+ 	// cout <<*curErr<<endl;
+
+
+
+	// const char *cp="some value";
+	// int n=0;
+	// cout <<cp<<endl;
+	// while (*cp)
+	// {
+	// 	++cp;	
+	// 	++n;
+	// }
+	// cout <<n;
+
+
+
+// 	const char *cp1="a string example";
+// 	const char *cp2="a different string";
+// 	int i= strcmp (cp1,cp2);
+// 	cout<< i << endl;
+// //C
+// 	int a=strlen(cp1);
+// 	int b=strlen(cp2);
+// 	char largeStr[a+b];
+// 	strcpy(largeStr, cp1);
+// 	strcat(largeStr,cp2);
+// 	cout <<a<<' '<<b<<endl;
+// 	cout << largeStr<<endl;
+// //C++
+// 	string largeStr2=cp2;
+// 	largeStr2 +=' ';
+// 	largeStr2 +=cp2;
+// 	cout<< largeStr2<<endl;
+
+
+//new array
+	// int *pia =new string int[10];
+
+	// const char *pc="a very long literal string";
+	// const size_t len=strlen(pc);
+	// for (size_t ix=0;ix !=10000;++ix)
+	// {
+	// 	char *pc2 = new char[len+1];
+
+	// }
+	// ??????
+	// ??????
+
+
+
+	// const char *noerr ="success";
+	// const char *err189="error: a function declaration must"
+	// 					" specify a function return type!";
+	// const char *errorTxt;
+	// if (1)
+	// 	errorTxt = err189;
+	// else
+	// 	errorTxt = noerr;
+	// int dimension =strlen(errorTxt)+1;
+	// char *errMsg = new char[dimension];
+	// strncpy (errMsg, errorTxt, dimension);
+	// for(size_t ix=0; ix!=strlen(errMsg)+1;++ix)
+	// 	cout<<errMsg[ix];
+	// //cout<<errrMsg<<endl;
+	// delete [] errMsg;
+
+
+
+	// const size_t arr_size =6;
+	// int int_arr[arr_size]={0,1,2,3,4,5};
+	// std::vector<int> v(int_arr,int_arr+arr_size);
+	// for (size_t ix=0; ix!=6;++ix){
+	// 	cout << v[ix]<<endl;
+	// }
+	// for (std::vector<int>::size_type ix=0; ix!=arr_size;++ix){
+	// 	cout << v[ix]<<endl;
+	// }
+
+
+	
 
 
 
